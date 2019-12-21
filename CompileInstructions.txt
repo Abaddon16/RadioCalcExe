@@ -1,0 +1,7 @@
+Open Anaconda Navigator
+Open Base environment Terminal
+Navigate to this location: "D:\Users\logan\Documents\WorkRelated\Radio Calcs"
+Run this command: 'pyinstaller --onefile --noconsole --icon="radio.ico" CalculatorGUI.py'
+Delete "/build"
+Move .exe from "/dist"
+Delete ".spec" file
