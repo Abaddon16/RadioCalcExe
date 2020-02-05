@@ -3,6 +3,7 @@
 !*/**/
 
 !.gitignore
+!.gitattributes
 !CalculatorGUI.exe
 !CalculatorGUI.py
 !CompileInstructions.txt
