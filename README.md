@@ -1,1 +1,1 @@
-https://github.com/Abaddon16/RadioCalcExe/raw/master/ExtraFiles/RadioCalcs.pdf
+https://github.com/Abaddon16/RadioCalcExe/blob/master/ExtraFiles/RadioCalcs.pdf
