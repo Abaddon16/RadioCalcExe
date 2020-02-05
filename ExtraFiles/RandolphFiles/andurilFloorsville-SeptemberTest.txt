@@ -1,8 +1,0 @@
-DIST: 158400ft
-TOP:  5000ft
-BOT:  -1000ft
-O1:   8*
-O2:   ?*
-TGT:  ?ft
-ALT:  ?ft
-

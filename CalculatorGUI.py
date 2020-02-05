@@ -1,8 +1,5 @@
 # TODO: create checkboxes to determine which to solve for vs (current state of) if values exist or not
 
-
-
-
 import PySimpleGUI as sg
 from SectorValues import SectorValues
 
@@ -12,7 +9,7 @@ def conToNum(s):
 	except ValueError: pass
 	try: return float(s)
 	except ValueError: return None
-	
+
 def conUnit(win, boxName, oldValue, newUnit, updateWindow: bool):
 	if dist_prev_sel[boxName]==newUnit: return conToNum(oldValue)
 	newValue=round(conToNum(oldValue)/conversion[dist_prev_sel[boxName]][newUnit], 3)
@@ -22,7 +19,7 @@ def conUnit(win, boxName, oldValue, newUnit, updateWindow: bool):
 
 def getBoxName(s: str):
 	return '_'+s.split('_')[-1]+'_'
-	
+
 radioAttrs=["_dist_", "_alt_", "_top_", "_tgt_", "_bot_", "_O1_", "_O2_"]
 distances=['feet', 'miles', 'nautical miles', 'meters', 'kilometers']# any update here will need to update the `conversion` dict and the distance_prev_selection dict
 conversion={#divide by these values; this is why miles -> feet has 1/5280: 2/(1/5280)=2*5280; newValue=oldValue/conversion[oldUnit][newUnit]
@@ -92,7 +89,7 @@ def createWindow():
 				 ]
 			]+\
 			[[sg.Button('Calculate'), sg.Button('Clear'), sg.Button('Exit')]]
-	
+
 	layout=[[sg.TabGroup([[sg.Tab('Intro', intro_layout), sg.Tab('Calculations', calc_layout)]])]]
 	return sg.Window('Radio Params Calculator', layout)
 

@@ -1,2 +1,14 @@
-.idea/
-__pycache__/
+*
+!*/
+!*/**/
+
+!.gitignore
+!CalculatorGUI.exe
+!CalculatorGUI.py
+!CompileInstructions.txt
+!radio.ico
+!SectorValues.py
+!/ExtraFiles/RadioCalcs.ipynb
+!/ExtraFiles/RadioCalcs.pdf
+!/ExtraFiles/RadioCalcs.py
+!/ExtraFiles/VariablesVisual.JPG
